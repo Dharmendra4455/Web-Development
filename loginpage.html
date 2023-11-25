@@ -1,0 +1,96 @@
+<html>
+    <head>
+        <title>Login Page</title>
+        <style>
+            body{
+                position: relative;
+                background-image: url("https://wallpapercave.com/wp/vlW6ikD.jpg");
+                background-size: cover;
+                
+            }
+
+#loginbody{
+  background-color: rgba(53, 95, 129, 0.1);
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+            margin-top: 65px;
+            margin-right: 10%;
+            float:right;
+            width: 400px;
+            height:500px;
+            border: 2px solid rgb(70, 30, 134);
+            border-radius: 25px 100px 25px 100px;
+        }
+        #loginbody:hover{
+            background-color: rgba(53, 95, 129, 0.2);
+        }
+        #Dharmendra:hover{
+           width:250px;
+            height:250px;
+            background-size: cover;
+        }
+        #submit:hover{
+          color: hsl(27, 94%, 50%);
+          border-color: red;
+        }
+        #submit{
+            margin-left:25px;
+            width:350px;
+            height:35px;
+            border-radius:20px;
+            font-size:20px;
+            background-color:rgb(27, 56, 121);
+            color: rgb(255, 255, 255);
+        }
+      #forgot:hover{
+        color:rgb(255, 255, 255);
+      }
+      #profileframe:hover{
+            width:120px;
+            height:120px;
+      }
+      #forgot{
+        color:black;
+        font-size:20px;
+        padding-left:140px;
+        
+      }
+        #profileframe{
+            position: absolute;
+            width:110px;
+            height:110px;
+            border:2px solid black;
+            border-radius: 50%;
+            right:285px;
+            margin-top: 5px;
+            background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4y00PbSZRfI9jqXzx4Cs8DBqRRx0jP8cOAg&usqp=CAU");
+            background-size: cover;
+        }
+        #Dharmendra{
+            background-image: url("https://www.halogencreative.co.uk/wp-content/uploads/2016/03/1370677824big-graphic-logo.png");
+            background-size: cover;
+            position: absolute;
+            width: 180px;
+            height: 80px;
+            margin-top: 130px;
+            right:280px;
+        }
+        </style>
+    </head>
+    <body>
+        <div id="loginbody"><hr style="margin-top:160px;opacity: 0.4;">
+            
+            <div style="padding-left:20px;font-size: 20px;font-weight: bold;">User ID/Email<sup style="color:red;font-size: 20px;">*</sup></div>
+           <div><input  type="text" style="margin-left:25px;padding-left:10px;font-size: 16px;width:350px;background-color: transparent;border-color:red;border-radius:20px;height:35px" placeholder="Dharmendra234@gmail.com"></div> <br>
+            <div style="padding-left:20px;font-size: 20px;font-weight: bold;">Password<sup style="color:red;font-size: 20px;">*</sup></div>
+            <div><input type="password" style="margin-left:25px;font-size: 20px;width:350px;padding-left:10px;background-color: transparent;border-color:red;border-radius:20px;height:35px;"></div>
+            <br><br><br>
+            <button id="submit">Submit</button>
+            <br><br><a id="forgot" href="#forgot password">forgot password ?</a>
+        </div>
+        <div id="profileframe">
+        </div>
+        <div id="Dharmendra"></div>
+    </body>
+</html>
