@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #container1,#container2{
+        display: flex;
+       
+        
+    }
+    .circle{
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        border: 2px solid rgb(121, 10, 247);
+    }
+</style>
+<body style="background-color: white;" >
+<div id="maincontainer" style="border: 5px double red; display: inline-block; margin-left: 30%; margin-top: 10%; background-color: gray;">
+    
+ <div  id="container1">
+ <div class="circle" id="red" style="background-color: red;" onmouseover="fun('red')" onmouseout="fun('white')"></div>
+ <div class="circle" id="yellow" style="background-color: yellow;"  onmouseover="fun('yellow')"  onmouseout="fun('white')"></div>
+  </div>
+ <div id="container2">
+ <div class="circle" id="blue" style="background-color:blue;"  onmouseover="fun('blue')"  onmouseout="fun('white')"></div>
+ <div class="circle" id="green" style="background-color:green;"  onmouseover="fun('green')"  onmouseout="fun('white')"></div>
+ </div>
+ </div>
+ </div>
+ <script>
+   
+      
+    
+    function fun(color){
+       var circle1=document.getElementById("red").style.backgroundColor;
+       var circle2=document.getElementById("yellow").style.backgroundColor;
+       var circle3=document.getElementById("blue").style.backgroundColor;
+       var circle4= document.getElementById("green").style.backgroundColor;
+       var arr=[circle1,circle2,circle3,circle4,"grey"];
+        var c=0;
+       for(var i=0;i<5;i++){
+        if(arr[i]==color)
+        {
+          var c=arr[i];
+        }
+            }
+       if(c==0){
+       document.body.style.backgroundColor="grey";}
+      else{
+       document.body.style.backgroundColor=c;}
+       }
+    
+</script>
+</body>
+</html>
