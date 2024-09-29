@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      body{
+        background-size: cover;
+        background-repeat: no-repeat;
+        /*background-image: url("images/water.jpg");*/
+      }
+    </style>
+</head>
+<body>
+   
+    <H1>WELCOME</H1>
+  <h3></h3>
+  <input type="text" placeholder="Enter your Name">
+  <button onclick="fun()" >Submits</button>
+
+
+    <script>
+      /*let age=prompt("Enter your age");
+parseInt(age)
+//alert(age)
+if(age>=18){
+alert("Eligible for Vote");}
+else{
+alert("Not eligible for Vote");}
+
+
+let a=prompt("Enter no.");
+parseInt(a)
+for(let i=1;i<=10;i++){
+    alert(a*i);
+}
+*/
+//Reverse Name
+/*let a=prompt("Enter your Name ");
+//parseInt(a)
+alert(a.split('').reverse().join(''))
+*/
+// Prime No.s
+/*
+let n=prompt("Enter no.");
+parseInt(n)
+var i;
+if(n>0){
+    
+    for(i=2;i<=n;i++){
+        if(n%i==0){
+         break;}
+    }
+    if(i==n){
+        alert(n +" Prime No.s");
+    }
+    else{
+    alert(n +" Not a prime No.s");}
+}
+else{
+  alert("Enter positive No.s");}
+  */
+
+
+var arr=["images/butterfly.jpeg","images/flowers.jpg","images/heart.jpeg","images/water.jpg","images/turtle.jpeg"]
+//alert((arr[0]))
+var ran=Math.floor(Math.random()*arr.length)
+ document.body.style.backgroundImage='url('+arr[ran]+')';
+ h=document.querySelector('h1')
+ h.style.color="blue";
+
+//let nam=prompt("Enter your Name");
+function fun(){
+    var nam=document.querySelector('input').value
+   
+    
+if(nam.length>0){
+h.innerText="Hello Dear "+nam 
+h.style.fontSize="35px"
+document.body.style.backgroundColor="green";
+var t=document.querySelector('h3')
+t.innerText="You are the most important person of the Universe"
+t.style.color="yellow"
+t.style.fontSize="30px"
+
+h.style.color="red";}
+else{
+    h.innerText="WELCOME DEAR" 
+    document.body.style.backgroundColor="yellow";
+}
+}
+        
+</script>
+</body>
+</html>
