@@ -18,7 +18,7 @@
     <H1>WELCOME</H1>
   <h3></h3>
   <input type="text" placeholder="Enter your Name">
-  <button onclick="fun()" >Submits</button>
+  <button onclick="fun()">Submits</button>
 
 
     <script>
@@ -63,11 +63,30 @@ else{
   alert("Enter positive No.s");}
   */
 
-
-var arr=["images/butterfly.jpeg","images/flowers.jpg","images/heart.jpeg","images/water.jpg","images/turtle.jpeg"]
+var inp=document.querySelector('input')
+inp.style.fontSize="20px";
+inp.style.borderRadius="5px"
+inp.style.color="red"
+var btn=document.querySelector('button')
+btn.style.fontSize="20px"
+btn.style.color="white"
+btn.style.backgroundColor="grey"
+var arr=["https://wallpapercave.com/wp/hZN9Goe.jpg",
+"https://wallpapercave.com/wp/bGtUe1Y.jpg",
+"https://wallpapercave.com/wp/Qlb4m0z.jpg",
+"https://wallpapercave.com/wp/wU4HFLP.jpg",
+"https://wallpapercave.com/wp/CLTI5X7.jpg",
+"https://wallpapercave.com/uwp/uwp4509961.jpeg",
+"https://wallpapercave.com/wp/VzLYXdx.jpg",
+"https://wallpapercave.com/wpt/d0EDz2Y.jpg",
+"https://wallpapercave.com/wp/EW6G6bH.jpg",
+"https://wallpapercave.com/wp/dZPz9YT.jpg",
+"https://wallpapercave.com/uwp/uwp4507567.webp"
+]
 //alert((arr[0]))
 var ran=Math.floor(Math.random()*arr.length)
- document.body.style.backgroundImage='url('+arr[ran]+')';
+
+ document.body.style.backgroundImage='url('+ arr[ran] +')';
  h=document.querySelector('h1')
  h.style.color="blue";
 
